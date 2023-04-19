@@ -12,7 +12,7 @@ import {
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import axios from 'axios';
-import { router } from 'next/client';
+import { useRouter } from 'next/router';
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -67,7 +67,7 @@ export const Details = () => {
   const [gender, setGen] = useState('');
   const [symptom, setSymp] = useState([]);
   const [open, setOpen] = useState(false);
-
+    const router = useRouter();
   const handleClick = () => {
     setOpen(true);
   };
