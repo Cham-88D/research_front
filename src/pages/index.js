@@ -52,7 +52,7 @@ const Page = () => {
     }),
     onSubmit: async (values) => {
       try {
-        axios.post(`http://localhost:8080/api/v1/auth/login`, {
+        axios.post(`http://20.237.103.85/api/v1/auth/login`, {
           "email":values.email,"password":values.password
         }).then((res)=>{
           localStorage.setItem('token', JSON.stringify(res.data));

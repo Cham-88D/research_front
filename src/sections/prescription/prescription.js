@@ -99,7 +99,7 @@ export const Press = () => {
 
         const dt = JSON.parse(localStorage.getItem('drugs'));
         try {
-          axios.post(`http://localhost:8080/api/v1/auth/record/save/pres`, {
+          axios.post(`http://20.237.103.85/api/v1/auth/record/save/pres`, {
             "firstname":values.fname,
             "lastname":values.lname,
             "nic":values.nic,

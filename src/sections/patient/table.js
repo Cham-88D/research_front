@@ -17,7 +17,7 @@ export const ViewPt = () => {
   useEffect(() => {
     const token = JSON.parse(localStorage.getItem('token'));
     try {
-      axios.get(`http://localhost:8080/api/v1/auth/patient/USER`,{headers:{Authorization:`Bearer ${token.token}`}}).then((res)=>{
+      axios.get(`http://20.237.103.85/api/v1/auth/patient/USER`,{headers:{Authorization:`Bearer ${token.token}`}}).then((res)=>{
         const users = res.data;
         setUser(users);
       }).catch(()=>{

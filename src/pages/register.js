@@ -67,7 +67,7 @@ const Page = () => {
     }),
     onSubmit: async (values) => {
       try {
-        axios.post(`http://localhost:8080/api/v1/auth/register`, {
+        axios.post(`http://20.237.103.85/api/v1/auth/register`, {
           "firstname":values.fname,
           "lastname":values.lname,
           "email":values.email,

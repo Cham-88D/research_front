@@ -110,7 +110,7 @@ export const Details = () => {
     onSubmit: async (values) => {
 
       try {
-        axios.post(`http://127.0.0.1:5000/predict`, {
+        axios.post(`http://20.237.103.85:5000/predict`, {
           'Gender':gender,
           'Age':values.age,
           'Symptoms':symptom
